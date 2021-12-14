@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Districtrp" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="45841196-2003-468d-a992-1a2896f34453">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from adddist_tbl;]]>
+	</queryString>
+	<field name="Did" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Did"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<field name="Dname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Dname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<field name="Duser" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Duser"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<field name="Dpass" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Dpass"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<field name="Covaxin" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Covaxin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<field name="Covishield" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Covishield"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="adddist_tbl"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="472151fa-7d76-476d-ae5f-78eb7c50532a"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="85b4a0ce-a0bb-4602-8f0d-0c091ea97eb5"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[District Data]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="9a2d3d3c-0113-4a2f-851c-8a941835bf00"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Total districts and other data]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="d8288a87-e326-446f-98ff-e51c5910b246"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d5e2fd39-3d5f-4a84-94a0-dff3ba531a57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="250c1611-4b92-4989-897a-f877a487eeb6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Did]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="70" y="0" width="100" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="783829f4-7b05-452a-8819-aa75908b2388">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="891911f1-bdb3-4cc3-8891-5e5fea60e555"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="170" y="0" width="140" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="75acfa10-704d-4ce4-85d3-e7d8c32ba2a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3635936-a1b4-491d-b32f-48d9d6047896"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Duser]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="310" y="0" width="110" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4e3bece9-a357-4a60-9b98-db6b48997ced">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03a993f4-d224-4cbc-8bf4-eab9221978fa"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dpass]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="0" width="60" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4c4107c3-c2b1-4696-ac10-43aeb1fa761f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ffd8f2a-27f7-4003-9b3a-3ed454e4f00a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Covaxin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="0" width="77" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e2b8655b-4e76-48f0-94c9-2df6080f4526">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0aeffaa-20d2-45fd-ad9e-500378a2b4e7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Covishield]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="5566fe45-15dc-41eb-a538-f10c0e2c0507"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="0" width="60" height="20" uuid="2f237050-c282-4575-9677-91ef9ee22db7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="250c1611-4b92-4989-897a-f877a487eeb6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Did}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="70" y="0" width="100" height="20" uuid="735e7a8e-e50c-4315-b071-9639096dbba9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="891911f1-bdb3-4cc3-8891-5e5fea60e555"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Dname}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="170" y="0" width="140" height="20" uuid="5acff3c7-f800-4290-94a8-83ca8e8fb921">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3635936-a1b4-491d-b32f-48d9d6047896"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Duser}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="310" y="0" width="110" height="20" uuid="44323fe6-a77a-4c9f-a882-9caeddad2e43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03a993f4-d224-4cbc-8bf4-eab9221978fa"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Dpass}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="420" y="0" width="60" height="20" uuid="de2a59d9-bd8c-426e-b87f-ee1d8d167205">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ffd8f2a-27f7-4003-9b3a-3ed454e4f00a"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Covaxin}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="480" y="0" width="72" height="20" uuid="c753b38f-2a76-4c72-a44e-38184173cb88">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0aeffaa-20d2-45fd-ad9e-500378a2b4e7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Covishield}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="b9873fdc-fc14-4cfc-abc7-5ee00a97ce3d"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="71ba824b-12f7-4abc-9841-646c42b20973"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="99c8de70-00f7-4d5e-96c6-48279ce6b64b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
